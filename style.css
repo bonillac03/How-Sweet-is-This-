@@ -1,0 +1,176 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.navbar {
+    position: fixed;
+    background-color: transparent;
+    width: 100%;
+    padding: 30px;
+    top: 0;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 100;
+    font-family: 'Lato', sans-serif;
+    color: #372a21;
+    cursor: pointer;
+    letter-spacing: 1.5px;
+    line-height: 20px;
+}
+
+.navbar-menu {
+    margin-left: 65px;
+}
+
+.navbar-menu a {
+    font-size: 13px;
+    font-weight: 100;
+    font-family: 'Lato', sans-serif;
+    color: #372a21;
+    text-transform: uppercase;
+    margin-left: 40px;
+    display: inline-block;
+    line-height: 20px;
+}
+
+.navbar-menu a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1.8px;
+    background-color: #dfb999;
+    transition: width .3s;
+}
+
+.navbar-menu a:hover::after {
+    width: 100%;
+}
+
+.phone {
+    line-height: 20px;
+    right: 30px;
+    position: absolute;
+    font-size: 16px;
+    font-weight: 100;
+    font-family: 'Lato', sans-serif;
+    color: #372a21;
+}
+
+#home {
+    height: 100vh;
+}
+
+.content {
+    height: 100%;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.content img {
+    width: 520px;
+    height: auto;
+}
+
+.description {
+    color: #372a21;
+    text-align: center;
+    padding: 30px;
+    height: 380px;
+}
+
+.description h1 {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    border: 6px solid #dfb999;
+    padding: 20px;
+    width: 300px;
+    margin: 20px auto;
+    line-height: 60px;
+}
+
+.description h1 span {
+    letter-spacing: 5px;
+    display: inline-block;
+}
+
+.description p {
+    font-size: 17px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+.description button {
+    padding: 15px 35px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    font-size: 19px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    margin-top: 20px;
+    background-color: #dfb999;
+    color: #372a21;
+}
+footer {
+    background-color: #f0f0f0;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px; /* Ajusta el tamaño según tu logo */
+    height: auto;
+}
+
+.company-info {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.contact-form {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.contact-form form button {
+    background-color: #dfb999;
+    color: #372a21;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.contact-form form button:hover {
+    background-color: #372a21;
+    color: #fff;
+}
